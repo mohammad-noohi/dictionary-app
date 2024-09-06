@@ -27,9 +27,3 @@ search your word and find information about the wrod like:
 ## Demo :
 
 too see the project clicke here [Demo](https://mohammad-noohi.github.io/dictionary-app/)
-
-
-
-## 🚀 About Me
-
-I'm a front-end developer and for see my projects click this link [my github profile](https://github.com/mohammad-noohi)
