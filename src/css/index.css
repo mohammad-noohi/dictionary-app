@@ -1,0 +1,130 @@
+@import url(reset.css);
+
+/* Reset CSS */
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* SweetAlert */
+div:where(.swal2-container) div:where(.swal2-popup) {
+  font-size: inherit !important;
+}
+
+/* App */
+.main {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fc466b;
+  background: -webkit-linear-gradient(to right, #3f5efb, #fc466b);
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+}
+.app {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.97);
+  max-width: 50rem;
+  padding: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 3rem;
+  margin: 0 1.5rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.search__input {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.97);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.search__btn {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.97);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.search__btn:hover {
+  color: blueviolet;
+}
+
+.content {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
+.content.active {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 2rem;
+}
+
+.word-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.word {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.audio {
+  display: none;
+}
+
+.audio-btn {
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  color: #000;
+}
+
+.audio-btn:hover,
+.audio-btn:active {
+  color: blueviolet;
+}
+.word-details {
+}
+.word-type {
+}
+.word-phonetic {
+}
+.word-defenition {
+  margin-top: 2rem;
+}
